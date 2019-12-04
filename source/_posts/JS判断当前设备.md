@@ -1,3 +1,9 @@
+---
+categories:
+- JavaScript
+tags:
+- JS
+---
 ```html
 <!DOCTYPE html>
 <html lang="en">

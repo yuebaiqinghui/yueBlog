@@ -41,8 +41,8 @@ version: "1.4.3"
 # Menu setting | format = title_name: link_url
 menu:
   # ABOUT: /whoami
-  # CATEGORIES: /categories
-  # TAGS: /tags
+  CATEGORIES: /categories
+  TAGS: /tags
   ARCHIVES: /archives
 
 # Page custom titles
@@ -74,11 +74,11 @@ scrollbar: true
 keywords: 前端
 
 # Website slogans
-descriptionOne: "Think like an artist, develop like an artisan"
-descriptionTwo: "艺术家思维去思考问题，工匠创造精神去开发"
+descriptionOne: "用耳去听，用心去斩"
+descriptionTwo: "灯光下也会有阴影，邪恶一直存在于我们身边"
 
 # If you use google analytics, please fill in the ID
-google_analytics: 'UA-149874671-1'
+# google_analytics: 'UA-149874671-1'
 
 # Website favicon
 favicon: /img/favicon.png

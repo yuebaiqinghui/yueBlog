@@ -1,3 +1,10 @@
+---
+categories:
+- 小程序
+tags:
+- 小程序
+- JS
+---
 1.注册和登录时，密码需要经过RSA加密传入后台
 ```js
 import RSA from "../../utils/wx_rsa.js"

@@ -1,3 +1,10 @@
+---
+categories:
+- Vue
+tags:
+- Vue
+- wangEditor
+---
 1. 下包: ```npm install wangeditor```
 2. 组件中配置一下
 ```
@@ -70,7 +77,7 @@ export default {
   }
 }
 </script>
-   ```
+```
 3. 要使用的页面引入该组件
 ```
 <template>

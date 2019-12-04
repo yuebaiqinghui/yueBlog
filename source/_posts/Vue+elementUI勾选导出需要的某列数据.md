@@ -1,3 +1,10 @@
+---
+categories:
+- Vue
+tags:
+- Vue
+- elementUI
+---
 1.首先下包
 ```
 npm install -S file-saver

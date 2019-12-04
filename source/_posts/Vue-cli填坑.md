@@ -1,3 +1,10 @@
+---
+categories:
+- Vue
+tags:
+- Vue
+- webpack
+---
 ## 创建项目时发现没有webpack的配置
 ```
 npm install -g @vue/cli-init
