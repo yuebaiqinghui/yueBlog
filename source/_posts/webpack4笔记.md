@@ -727,3 +727,61 @@ module.exports = {
   compiler 在每次构建结束后会触发 done 这个 hook
 
   process.exit 主动处理构建报错
+  
+
+## 构建速度和体积优化
+
+使用内置的stats分析。stats:构建的统计信息
+```json
+// package.json
+"scripts":{
+    "build:stats":"webpack --env production --json > stats.json"
+}
+```
+
+### 速度分析：speed-measure-webpack-plugin
+
+* 用法：
+
+  ```js
+  const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+  const smp = new SpeedMeasurePlugin();
+  const webpackConfig = smp.wrap({
+      plugins:[
+          new MyPlugin(),
+          new MyOtherPlugin()
+      ]
+  });
+  ```
+
+* 作用：分析整个打包总耗时，每个插件和loader的耗时情况
+
+### 体积分析:webpack-bundle-analyzer
+
+* 用法：
+
+  ```js
+  const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+  
+  module.exports = {
+      plugins: [
+          new BundleAnalyzerPlugin()
+      ]
+  }
+  ```
+
+  构建完成后会在 8888 端口展示大小
+
+* 可以分析依赖的第三方模块文件大小和业务里面的组件代码大小
+
+### 高版本的webpack和Node.js
+
+高版本速度更快
+
+webpack4优化：
+
+* V8 带来的优化（for of 替代 forEach、Map 和 Set 替代 Object、includes 替代 indexOf）
+* 默认使用更快的 md4 hash 算法
+* webpacks AST 可以直接从 loader 传递给 AST，减少解析时间
+* 使用字符串方法替代正则表达式
+
