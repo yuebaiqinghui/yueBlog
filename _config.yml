@@ -8,7 +8,7 @@ subtitle: ''
 description: '摸鱼程序员'
 keywords:
 author: XJF
-language: en
+language: zh-Hans
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: obsidian
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
